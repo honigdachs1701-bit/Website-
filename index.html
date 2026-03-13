@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Haus- & Gartenservice Havelland | Heckenschnitt, Steinreinigung & Herbstpflege in Falkensee</title>
+<meta name="description" content="Professioneller Heckenschnitt, Steinreinigung & Herbstpflege in Falkensee und Umgebung. Ihr lokaler Dienstleister im Havelland. Kostenlos anfragen!"/>
+<link rel="canonical" href="https://hausgartenservice.website/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Haus- & Gartenservice Havelland","telephone":"+4915156198195","email":"hausgartenservicehvl@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Darmstädter Straße 15","addressLocality":"Falkensee","addressCountry":"DE"},"openingHours":"Mo-Su 00:00-24:00","areaServed":"Havelland"}</script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--gd:#1a4a1a;--gm:#2d7a2d;--ga:#6fcf6f;--go:#e8a000;--gh:#c87800;--wa:#25D366;--fd:'Oswald',sans-serif;--fb:'Source Sans 3',sans-serif;}
+body{font-family:var(--fb);color:#111;background:#fff;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,20,10,0.96);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:70px;border-bottom:1px solid rgba(255,255,255,.08);}
+.nav-logo img{height:48px;width:auto;}
+.nl{display:flex;list-style:none;gap:2rem;align-items:center;}
+.nl a{color:rgba(255,255,255,.8);font-size:.83rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;transition:color .2s;}
+.nl a:hover,.nl a.active{color:var(--ga);}
+.nl .nav-cta{background:var(--go);color:#000;padding:8px 18px;border-radius:3px;font-weight:700;}
+.hb{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;-webkit-tap-highlight-color:transparent;}
+.hb span{display:block;width:26px;height:2px;background:#fff;border-radius:2px;}
+
+@media(max-width:900px){
+  .nl{display:none;position:absolute;top:70px;left:0;right:0;background:rgba(10,20,10,.98);flex-direction:column;padding:1.5rem 5%;gap:0;border-bottom:2px solid var(--gm);}
+  .nl.open{display:flex;}
+  .nl li{width:100%;border-bottom:1px solid rgba(255,255,255,.08);}
+  .nl a{display:block;padding:14px 0;font-size:1rem;}
+  .nl .nav-cta{margin:12px 0;text-align:center;}
+  .hb{display:flex;}
+}
+
+.ticker{background:var(--gd);padding:14px 0;overflow:hidden;}
+.ticker-inner{display:flex;gap:3rem;white-space:nowrap;animation:tick 22s linear infinite;}
+@keyframes tick{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.ticker-item{color:rgba(255,255,255,.7);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;display:inline-flex;align-items:center;gap:.8rem;}
+.ticker-item::before{content:'✦';color:var(--ga);}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;padding:0 5% 12%;background:linear-gradient(135deg,#0a1f0a 0%,#1a4a1a 40%,#0d2d0d 100%);}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7) 0%,rgba(0,0,0,.1) 100%);}
+.hero-c{position:relative;z-index:2;max-width:700px;}
+.hero-badge{display:inline-block;border:1px solid var(--ga);color:var(--ga);font-size:.73rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:7px 16px;margin-bottom:1.5rem;}
+.hero h1{font-family:var(--fd);font-size:clamp(3.5rem,8vw,7rem);font-weight:700;text-transform:uppercase;color:#fff;line-height:.95;margin-bottom:1.2rem;}
+.hero h1 span{color:var(--ga);}
+.hero p{color:rgba(255,255,255,.75);font-size:1.1rem;line-height:1.75;max-width:520px;margin-bottom:2rem;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+.btn-gold{background:var(--go);color:#000;font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:14px 28px;border-radius:3px;transition:background .2s;display:inline-block;}
+.btn-gold:hover{background:var(--gh);}
+.btn-wa{background:var(--wa);color:#fff;font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:14px 28px;border-radius:3px;display:inline-flex;align-items:center;gap:8px;transition:background .2s;}
+.btn-wa:hover{background:#1da851;}
+
+.stats{background:var(--gd);padding:60px 5%;}
+.stats-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;}
+.stat-num{font-family:var(--fd);font-size:3.5rem;font-weight:700;color:var(--go);}
+.stat-label{font-size:.85rem;color:rgba(255,255,255,.65);margin-top:.3rem;}
+
+section{padding:88px 5%;}
+.ct{max-width:1200px;margin:0 auto;}
+.sec-label{display:inline-block;font-size:.73rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;border-left:3px solid var(--gm);padding-left:10px;color:var(--gm);margin-bottom:.8rem;}
+.sec-title{font-family:var(--fd);font-size:clamp(2.4rem,5vw,4rem);font-weight:700;text-transform:uppercase;line-height:1;color:var(--gd);margin-bottom:1rem;}
+.sec-sub{font-size:.97rem;color:#666;max-width:560px;line-height:1.75;}
+
+.about{background:#f0f7f0;}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.about-img-wrap{position:relative;}
+.about-img-wrap img{width:100%;border-radius:8px;aspect-ratio:4/3;object-fit:cover;object-position:center top;}
+.about-badge{position:absolute;bottom:-20px;right:-20px;background:var(--go);color:#000;padding:16px 22px;border-radius:6px;text-align:center;}
+.about-badge strong{display:block;font-family:var(--fd);font-size:2rem;}
+.about-badge span{font-size:.75rem;font-weight:600;opacity:.75;}
+.about-list{margin:1.5rem 0;padding:0;list-style:none;}
+.about-list li{padding:8px 0 8px 20px;border-bottom:1px solid #c8e0c8;font-size:.95rem;position:relative;}
+.about-list li::before{content:'✓';position:absolute;left:0;color:var(--gm);font-weight:700;}
+
+.services-header{text-align:center;margin-bottom:3.5rem;}
+.services-header .sec-sub{margin:0 auto;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(0,0,0,.08);border-radius:8px;overflow:hidden;}
+.service-card{border-right:1px solid rgba(0,0,0,.08);}
+.service-card:last-child{border-right:none;}
+.card-header{padding:1.5rem 1.5rem 1rem;}
+.card-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:2px;margin-bottom:.6rem;}
+.tag-hecke{background:#d4ead4;color:var(--gd);}
+.tag-stein{background:#c8d8e8;color:#1a2a3a;}
+.tag-herbst{background:#f0d890;color:#3a2200;}
+.card-title{font-family:var(--fd);font-size:1.9rem;font-weight:700;text-transform:uppercase;}
+.ct-hecke{color:var(--gd);}
+.ct-stein{color:#1a2a3a;}
+.ct-herbst{color:#3a2200;}
+.card-img{width:100%;aspect-ratio:16/10;overflow:hidden;}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+.service-card:hover .card-img img{transform:scale(1.04);}
+.card-body{padding:1.5rem;}
+.card-body p{font-size:.92rem;color:#555;line-height:1.7;margin-bottom:1rem;}
+.card-items{list-style:none;margin-bottom:1.5rem;}
+.card-items li{font-size:.88rem;padding:5px 0 5px 16px;position:relative;color:#444;}
+.dot-g::before{content:'•';position:absolute;left:0;color:var(--gm);}
+.dot-b::before{content:'•';position:absolute;left:0;color:#2d5a7a;}
+.dot-a::before{content:'•';position:absolute;left:0;color:#8a5500;}
+.btn-card{display:inline-block;padding:10px 20px;font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;border-radius:3px;color:#fff;}
+.btn-g{background:var(--gd);}
+.btn-b{background:#1a2a3a;}
+.btn-a{background:#3a2200;}
+
+.why{background:#f0f7f0;}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;}
+.why-item{background:#fff;padding:2rem;border-radius:8px;border-top:3px solid var(--gm);}
+.why-icon{font-size:2rem;margin-bottom:1rem;}
+.why-item h3{font-family:var(--fd);font-size:1.3rem;font-weight:700;text-transform:uppercase;color:var(--gd);margin-bottom:.6rem;}
+.why-item p{font-size:.9rem;color:#555;line-height:1.7;}
+
+.map-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+.city-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem;}
+.ctag{background:#fff;border:1px solid #c8e0c8;padding:5px 12px;border-radius:2px;font-size:.78rem;font-weight:600;color:var(--gd);}
+.map-embed{width:100%;height:380px;border:none;border-radius:8px;filter:grayscale(.3);}
+
+.reviews-wrap{overflow:hidden;margin-top:2.5rem;}
+.reviews-track{display:flex;gap:1.5rem;transition:transform .4s ease;}
+.review-card{background:#f0f7f0;border:1px solid #c8e0c8;border-radius:8px;padding:1.8rem;min-width:calc(33.333% - 1rem);flex-shrink:0;}
+.stars{color:#f0a000;font-size:1.1rem;margin-bottom:.8rem;}
+.review-text{font-size:.92rem;color:#333;line-height:1.7;margin-bottom:1.2rem;}
+.review-author{font-size:.8rem;font-weight:700;color:var(--gd);}
+.review-nav{display:flex;gap:.8rem;margin-top:1.5rem;}
+.rev-btn{background:none;border:2px solid var(--gm);color:var(--gm);width:40px;height:40px;border-radius:3px;font-size:1.1rem;cursor:pointer;transition:all .2s;}
+.rev-btn:hover{background:var(--gm);color:#fff;}
+
+.process{background:var(--gd);padding:88px 5%;}
+.process .sec-label{border-left-color:var(--ga);color:var(--ga);}
+.process .sec-title{color:#fff;}
+.process-header{text-align:center;margin-bottom:3.5rem;}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;}
+.step{text-align:center;}
+.step-num{width:48px;height:48px;border-radius:50%;background:var(--go);color:#000;font-family:var(--fd);font-size:1.3rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;}
+.step h3{font-family:var(--fd);font-size:1.1rem;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:.5rem;}
+.step p{font-size:.85rem;color:rgba(255,255,255,.55);line-height:1.6;}
+
+.faq-list{max-width:780px;margin:2.5rem auto 0;}
+.faq-item{background:#f0f7f0;border:1px solid #c8e0c8;border-radius:6px;overflow:hidden;margin-bottom:.75rem;}
+.faqq{width:100%;background:none;border:none;padding:1.2rem 1.5rem;text-align:left;font-family:var(--fb);font-size:1rem;font-weight:700;color:var(--gd);cursor:pointer;display:flex;justify-content:space-between;align-items:center;-webkit-tap-highlight-color:transparent;}
+.faqq::after{content:'+';font-size:1.4rem;color:var(--gm);}
+.faq-item.open .faqq::after{content:'−';}
+.faq-ans{display:none;padding:0 1.5rem 1.2rem;font-size:.93rem;color:#444;line-height:1.75;}
+.faq-item.open .faq-ans{display:block;}
+
+.contact-bg{background:#f0f7f0;}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+.ctx-item{display:flex;align-items:center;gap:1rem;background:#fff;border-radius:8px;padding:1.2rem 1.5rem;margin-bottom:1rem;}
+.ctx-icon{width:42px;height:42px;border-radius:50%;background:var(--gm);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.ctx-item strong{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#999;margin-bottom:2px;}
+.ctx-item span{font-size:1rem;font-weight:600;color:var(--gd);}
+.btn-wa-lg{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;padding:14px;border-radius:4px;font-weight:700;font-size:1rem;text-transform:uppercase;margin-top:1rem;transition:background .2s;}
+.btn-wa-lg:hover{background:#1da851;}
+.contact-form{background:#fff;padding:2rem;border-radius:8px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.fg{margin-bottom:1rem;}
+.fg label{display:block;font-size:.73rem;font-weight:700;color:var(--gm);margin-bottom:4px;text-transform:uppercase;letter-spacing:.08em;}
+.fg input,.fg textarea,.fg select{width:100%;background:#fafafa;border:1.5px solid #e0e8e0;border-radius:4px;padding:12px 14px;font-family:var(--fb);font-size:.92rem;outline:none;transition:border-color .2s;}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--gm);}
+.fg textarea{resize:vertical;min-height:100px;}
+.btn-submit{width:100%;background:var(--go);color:#000;padding:14px;border:none;border-radius:4px;font-family:var(--fb);font-size:.95rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:.06em;margin-top:.4rem;}
+.btn-submit:hover{background:var(--gh);}
+.fnote{font-size:.75rem;color:#999;margin-top:.8rem;text-align:center;}
+
+footer{background:var(--gd);color:rgba(255,255,255,.6);text-align:center;padding:2rem 5%;font-size:.85rem;}
+footer a{color:rgba(255,255,255,.6);}
+footer a:hover{color:#fff;}
+
+.waf{position:fixed;bottom:28px;right:28px;z-index:999;background:var(--wa);color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.55rem;box-shadow:0 4px 24px rgba(37,211,102,.45);text-decoration:none;transition:transform .2s;animation:wap 2.5s infinite;}
+.waf:hover{transform:scale(1.1);}
+@keyframes wap{0%,100%{box-shadow:0 4px 24px rgba(37,211,102,.45);}50%{box-shadow:0 4px 40px rgba(37,211,102,.8);}}
+
+@media(max-width:900px){
+  .about-inner,.contact-inner,.map-inner{grid-template-columns:1fr;}
+  .services-grid{grid-template-columns:1fr;}
+  .service-card{border-right:none;border-bottom:1px solid rgba(0,0,0,.08);}
+  .why-grid{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .process-steps{grid-template-columns:1fr 1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .about-badge{position:static;margin-top:1.5rem;display:inline-block;}
+  .review-card{min-width:90%;}
+  .hero{padding:0 5% 16%;}
+}
+@media(max-width:500px){
+  .process-steps{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html"><img src="logo.png" alt="Haus- & Gartenservice Havelland"/></a>
+  <ul class="nl" id="nl">
+    <li><a href="index.html" class="active">Startseite</a></li>
+    <li><a href="heckenschnitt.html">Heckenschnitt</a></li>
+    <li><a href="steinreinigung.html">Steinreinigung</a></li>
+    <li><a href="herbstpflege.html">Herbstpflege</a></li>
+    <li><a href="kontakt.html" class="nav-cta">Kostenlos anfragen</a></li>
+  </ul>
+  <button class="hb" id="hb" aria-label="Menü"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="ticker" style="margin-top:70px;">
+  <div class="ticker-inner">
+    <span class="ticker-item">Heckenschnitt</span><span class="ticker-item">Steinreinigung</span><span class="ticker-item">Herbstpflege</span><span class="ticker-item">Dachrinnenreinigung</span><span class="ticker-item">Falkensee & Umgebung</span><span class="ticker-item">Mo–So erreichbar</span><span class="ticker-item">800+ Aufträge</span>
+    <span class="ticker-item">Heckenschnitt</span><span class="ticker-item">Steinreinigung</span><span class="ticker-item">Herbstpflege</span><span class="ticker-item">Dachrinnenreinigung</span><span class="ticker-item">Falkensee & Umgebung</span><span class="ticker-item">Mo–So erreichbar</span><span class="ticker-item">800+ Aufträge</span>
+  </div>
+</div>
+
+<section class="hero" style="padding-top:0;">
+  <img class="hero-img" src="heck-hero.png" alt="Haus & Gartenservice Havelland" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;z-index:0;opacity:0.6;">
+  <div class="hero-ov"></div>
+  <div class="hero-c">
+    <span class="hero-badge">Ihr lokaler Dienstleister in Falkensee &amp; Umgebung</span>
+    <h1>Ihr Garten.<br>Unser <span>Handwerk.</span></h1>
+    <p>Professioneller Heckenschnitt, Steinreinigung &amp; Herbstpflege im Havelland – zuverlässig, gründlich und zum fairen Preis.</p>
+    <div class="hero-btns">
+      <a href="kontakt.html" class="btn-gold">Kostenlose Anfrage starten</a>
+      <a href="https://wa.me/4915156198195" target="_blank" class="btn-wa">💬 WhatsApp schreiben</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stats-grid">
+    <div><div class="stat-num">800+</div><div class="stat-label">Abgeschlossene Aufträge</div></div>
+    <div><div class="stat-num">4+</div><div class="stat-label">Jahre Erfahrung</div></div>
+    <div><div class="stat-num">15+</div><div class="stat-label">Städte im Servicegebiet</div></div>
+    <div><div class="stat-num">Mo–So</div><div class="stat-label">Rund um die Uhr erreichbar</div></div>
+  </div>
+</div>
+
+<section class="about">
+  <div class="ct">
+    <div class="about-inner">
+      <div class="about-img-wrap">
+        <img src="inhaber.png" alt="Noah – Haus- & Gartenservice Havelland" style="object-position:center 45%;"/>
+        <div class="about-badge"><strong>800+</strong><span>Zufriedene<br>Kunden</span></div>
+      </div>
+      <div>
+        <span class="sec-label">Über uns</span>
+        <h2 class="sec-title">Ihr zuverlässiger Partner im Havelland</h2>
+        <p class="sec-sub">Seit über 4 Jahren setze ich mich mit Leidenschaft und professionellem Equipment für gepflegte Außenanlagen ein – pünktlich, gründlich und mit einem Ergebnis, das überzeugt.</p>
+        <ul class="about-list">
+          <li>Spezialisiert auf präzisen Heckenschnitt aller Arten</li>
+          <li>Professionelle Steinreinigung mit Nano-Versiegelung</li>
+          <li>Herbstpflege – Laub, Dachrinne &amp; Wintervorbereitung</li>
+          <li>Kostenlose Besichtigung &amp; transparente Preise</li>
+          <li>Schnelle Terminvergabe, auch kurzfristig möglich</li>
+        </ul>
+        <a href="kontakt.html" class="btn-gold">Kostenlose Anfrage starten</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="ct">
+    <div class="services-header">
+      <span class="sec-label">Unsere Leistungen</span>
+      <h2 class="sec-title">Was wir für Sie tun</h2>
+      <p class="sec-sub">Drei Kernleistungen – ein Ansprechpartner. Professionell im gesamten Havelland.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="card-header"><span class="card-tag tag-hecke">Heckenschnitt</span><h3 class="card-title ct-hecke">Heckenschnitt</h3></div>
+        <div class="card-img"><img src="heck-hero.png" alt="Heckenschnitt" style="object-position:center top;"/></div>
+        <div class="card-body">
+          <p>Präziser Heckenschnitt für alle Heckenpflanzen und -größen – sauber, gerade und professionell.</p>
+          <ul class="card-items"><li class="dot-g">Alle Heckenarten & -größen</li><li class="dot-g">Professionelles Equipment</li><li class="dot-g">Schnittgut wird entsorgt</li></ul>
+          <a href="heckenschnitt.html" class="btn-card btn-g">Mehr erfahren</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-header"><span class="card-tag tag-stein">Steinreinigung</span><h3 class="card-title ct-stein">Steinreinigung</h3></div>
+        <div class="card-img"><img src="stein-hero.png" alt="Steinreinigung" style="object-position:center center;"/></div>
+        <div class="card-body">
+          <p>Einfahrten und Terrassen professionell gereinigt – mit Hochdruckreiniger, Fugensand und Nano-Versiegelung.</p>
+          <ul class="card-items"><li class="dot-b">Hochdruckreinigung mit Flächenaufsatz</li><li class="dot-b">Fugen auffüllen & Nano-Versiegelung</li><li class="dot-b">Privat & Gewerbe</li></ul>
+          <a href="steinreinigung.html" class="btn-card btn-b">Mehr erfahren</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-header"><span class="card-tag tag-herbst">Herbstpflege</span><h3 class="card-title ct-herbst">Herbstpflege</h3></div>
+        <div class="card-img"><img src="herbst-intro.png" alt="Herbstpflege" style="object-position:center top;"/></div>
+        <div class="card-body">
+          <p>Laubentfernung, Dachrinnenreinigung und Wintervorbereitung – Ihr Garten gepflegt durch den Herbst.</p>
+          <ul class="card-items"><li class="dot-a">Laubentfernung & Entsorgung</li><li class="dot-a">Dachrinnenreinigung</li><li class="dot-a">Garten für Winter herrichten</li></ul>
+          <a href="herbstpflege.html" class="btn-card btn-a">Mehr erfahren</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="ct">
+    <span class="sec-label">Warum wir</span>
+    <h2 class="sec-title">Ihr Vorteil mit uns</h2>
+    <div class="why-grid">
+      <div class="why-item"><div class="why-icon">🏆</div><h3>Profi-Equipment</h3><p>Wir arbeiten nur mit professionellem Werkzeug und Maschinen – für saubere, präzise Ergebnisse.</p></div>
+      <div class="why-item"><div class="why-icon">⚡</div><h3>Schnelle Termine</h3><p>Auch kurzfristige Anfragen möglich. Wir sind Mo–So rund um die Uhr für Sie erreichbar.</p></div>
+      <div class="why-item"><div class="why-icon">💰</div><h3>Faire Preise</h3><p>Transparente Kalkulation ohne versteckte Kosten. Kostenlose Besichtigung vor Ort.</p></div>
+      <div class="why-item"><div class="why-icon">🌿</div><h3>Lokaler Experte</h3><p>4+ Jahre Erfahrung im Havelland. Wir kennen die Region und unsere Kunden persönlich.</p></div>
+      <div class="why-item"><div class="why-icon">✅</div><h3>Alles inklusive</h3><p>Schnittgut und Laub werden von uns entsorgt. Sie müssen sich um nichts kümmern.</p></div>
+      <div class="why-item"><div class="why-icon">📱</div><h3>WhatsApp-Service</h3><p>Einfach per WhatsApp anfragen, Fotos schicken und Angebot erhalten. Schnell & unkompliziert.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="ct">
+    <div class="map-inner">
+      <div>
+        <span class="sec-label">Servicegebiet</span>
+        <h2 class="sec-title">Wir kommen zu Ihnen</h2>
+        <p class="sec-sub">Hauptstandort Falkensee – wir sind im gesamten Havelland und angrenzenden Berliner Bezirken für Sie da.</p>
+        <div class="city-tags">
+          <span class="ctag">Falkensee</span><span class="ctag">Brieselang</span><span class="ctag">Dallgow</span><span class="ctag">Kladow</span><span class="ctag">Gatow</span><span class="ctag">Spandau</span><span class="ctag">Nauen</span><span class="ctag">Potsdam</span><span class="ctag">Wustermark</span><span class="ctag">Elstal</span><span class="ctag">Staaken</span><span class="ctag">Seegefeld</span><span class="ctag">Pausin</span><span class="ctag">Berlin</span><span class="ctag">+ Weitere</span>
+        </div>
+      </div>
+      <iframe class="map-embed" title="Servicegebiet"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38848.8!2d12.999!3d52.563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a858b7a3b5af2f%3A0x4203682b77cc600!2sFalkensee!5e0!3m2!1sde!2sde!4v1700000000000"
+        allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="ct">
+    <span class="sec-label">Kundenstimmen</span>
+    <h2 class="sec-title">Das sagen unsere Kunden</h2>
+    <div class="reviews-wrap">
+      <div class="reviews-track" id="reviewsTrack">
+        <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">„Super Arbeit! Die Hecke sieht aus wie neu. Sehr pünktlich, sauber gearbeitet und der Preis war fair. Gerne wieder!"</p><div class="review-author">Sabine M. – Falkensee</div></div>
+        <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">„Einfahrt wurde perfekt gereinigt. Vorher komplett grün, jetzt wie neu. Nano-Versiegelung war eine super Empfehlung."</p><div class="review-author">Thomas K. – Brieselang</div></div>
+        <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">„Sehr freundlich und professionell. Laubentsorgung und Dachrinne an einem Tag erledigt. Klare Empfehlung!"</p><div class="review-author">Familie Richter – Dallgow</div></div>
+        <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">„Spontane Anfrage, gleich am nächsten Tag da. Qualität top, Preis fair. Bin sehr zufrieden!"</p><div class="review-author">Markus B. – Spandau</div></div>
+        <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">„Endlich jemand der zuverlässig ist! Alles sauber hinterlassen, keine Spuren. Sehr empfehlenswert."</p><div class="review-author">Andrea S. – Kladow</div></div>
+      </div>
+    </div>
+    <div class="review-nav">
+      <button class="rev-btn" id="prevBtn">←</button>
+      <button class="rev-btn" id="nextBtn">→</button>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="ct">
+    <div class="process-header">
+      <span class="sec-label">So läuft es ab</span>
+      <h2 class="sec-title">In 4 Schritten zum Ergebnis</h2>
+    </div>
+    <div class="process-steps">
+      <div class="step"><div class="step-num">1</div><h3>Anfrage</h3><p>Per WhatsApp, Telefon oder Formular – gerne mit Fotos für ein schnelles Angebot.</p></div>
+      <div class="step"><div class="step-num">2</div><h3>Angebot</h3><p>Wir melden uns noch am selben Tag mit einem fairen, transparenten Festpreis.</p></div>
+      <div class="step"><div class="step-num">3</div><h3>Termin</h3><p>Wunschtermin auswählen – auch kurzfristig und am Wochenende möglich.</p></div>
+      <div class="step"><div class="step-num">4</div><h3>Fertig</h3><p>Wir erledigen alles sauber und hinterlassen keine Spuren. Sie genießen das Ergebnis.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="ct" style="max-width:900px;">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <span class="sec-label">FAQ</span>
+      <h2 class="sec-title">Häufige Fragen</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faqq">Wie erhalte ich ein Angebot?</button><div class="faq-ans">Einfach per WhatsApp, Telefon oder Kontaktformular anfragen – gerne mit Fotos. Wir melden uns noch am selben Tag mit einem Festpreisangebot.</div></div>
+      <div class="faq-item"><button class="faqq">Wie schnell können Sie kommen?</button><div class="faq-ans">Wir sind Mo–So erreichbar und vergeben Termine oft schon innerhalb weniger Tage – bei dringenden Anfragen auch kurzfristiger.</div></div>
+      <div class="faq-item"><button class="faqq">Was kostet ein Heckenschnitt?</button><div class="faq-ans">Der Preis hängt von Länge, Höhe und Zugänglichkeit ab. Wir erstellen nach Ihrer Anfrage ein transparentes Festpreisangebot ohne versteckte Kosten.</div></div>
+      <div class="faq-item"><button class="faqq">Wird das Schnittgut entsorgt?</button><div class="faq-ans">Ja! Schnittgut, Laub und Schmutz werden von uns vollständig entfernt und fachgerecht entsorgt.</div></div>
+      <div class="faq-item"><button class="faqq">In welchen Städten arbeiten Sie?</button><div class="faq-ans">Hauptsächlich Falkensee und Umgebung: Brieselang, Dallgow, Kladow, Gatow, Spandau, Nauen, Potsdam, Wustermark, Elstal und weitere.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-bg">
+  <div class="ct">
+    <div class="contact-inner">
+      <div>
+        <span class="sec-label">Kontakt</span>
+        <h2 class="sec-title">Jetzt kostenlos anfragen</h2>
+        <p class="sec-sub" style="margin-bottom:2rem;">Füllen Sie das Formular aus oder schreiben Sie uns direkt per WhatsApp.</p>
+        <div class="ctx-item"><div class="ctx-icon">📞</div><div><strong>Telefon</strong><span>015156198195</span></div></div>
+        <div class="ctx-item"><div class="ctx-icon">✉️</div><div><strong>E-Mail</strong><span>hausgartenservicehvl@gmail.com</span></div></div>
+        <div class="ctx-item"><div class="ctx-icon">📍</div><div><strong>Adresse</strong><span>Darmstädter Str. 15, Falkensee</span></div></div>
+        <div class="ctx-item"><div class="ctx-icon">🕐</div><div><strong>Erreichbarkeit</strong><span>Mo–So · Rund um die Uhr</span></div></div>
+        <a href="https://wa.me/4915156198195" target="_blank" class="btn-wa-lg">💬 Jetzt per WhatsApp anfragen</a>
+      </div>
+      <div class="contact-form">
+        <form name="anfrage" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="danke.html">
+          <input type="hidden" name="form-name" value="anfrage"/>
+          <p style="display:none;"><input name="bot-field"/></p>
+          <div class="form-row">
+            <div class="fg"><label>Vorname *</label><input type="text" name="vorname" placeholder="Max" required/></div>
+            <div class="fg"><label>Nachname *</label><input type="text" name="nachname" placeholder="Mustermann" required/></div>
+          </div>
+          <div class="fg"><label>Telefon *</label><input type="tel" name="telefon" placeholder="+49 ..." required/></div>
+          <div class="fg"><label>E-Mail</label><input type="email" name="email" placeholder="ihre@email.de"/></div>
+          <div class="fg"><label>Gewünschte Leistung</label>
+            <select name="leistung">
+              <option value="">Bitte auswählen...</option>
+              <option>Heckenschnitt</option><option>Steinreinigung (Einfahrt/Terrasse)</option>
+              <option>Herbstpflege / Laubentfernung</option><option>Dachrinnenreinigung</option>
+              <option>Mehrere Leistungen</option><option>Sonstiges</option>
+            </select>
+          </div>
+          <div class="fg"><label>Adresse</label><input type="text" name="adresse" placeholder="Straße, Hausnr., Ort"/></div>
+          <div class="fg"><label>Nachricht *</label><textarea name="nachricht" placeholder="Kurze Beschreibung Ihres Auftrags..." required></textarea></div>
+          <button type="submit" class="btn-submit">Anfrage absenden</button>
+          <p class="fnote">Ihre Daten werden nur zur Bearbeitung Ihrer Anfrage verwendet.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Haus- &amp; Gartenservice Havelland &nbsp;·&nbsp; Darmstädter Str. 15, 14612 Falkensee &nbsp;·&nbsp;
+  <a href="tel:015156198195">015156198195</a> &nbsp;·&nbsp;
+  <a href="kontakt.html#impressum">Impressum</a> &nbsp;·&nbsp;
+  <a href="kontakt.html#datenschutz">Datenschutz</a></p>
+</footer>
+
+<a href="https://wa.me/4915156198195" target="_blank" class="waf" title="WhatsApp">💬</a>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var btn=document.getElementById('hb');
+  var nav=document.getElementById('nl');
+  if(!btn||!nav)return;
+  btn.style.zIndex='9999';
+  btn.style.position='relative';
+  function toggle(){nav.classList.toggle('open');}
+  btn.onclick=function(e){e.preventDefault();e.stopPropagation();toggle();};
+  document.addEventListener('click',function(e){
+    if(nav.classList.contains('open')&&!nav.contains(e.target)&&!btn.contains(e.target)){
+      nav.classList.remove('open');
+    }
+  });
+  document.querySelectorAll('.faqq').forEach(function(q){
+    q.parentElement.querySelector('.faqq').onclick=function(){q.parentElement.classList.toggle('open');};
+  });
+});
+</script>
+</body>
+</html>

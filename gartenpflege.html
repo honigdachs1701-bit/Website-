@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gartenpflege Falkensee & Havelland | Heckenschnitt & Rasenpflege</title>
+  <meta name="description" content="Professionelle Gartenpflege im Havelland – spezialisiert auf Heckenschnitt und Rasenpflege in Falkensee, Brieselang, Dallgow, Kladow und Umgebung. Jetzt kostenlos anfragen!" />
+  <meta name="keywords" content="Gartenpflege Falkensee, Heckenschnitt Havelland, Rasenpflege Falkensee, Heckenschnitt Brieselang, Gartenpflege Kladow, Rasenmähen Dallgow, Gartenservice Havelland" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.hausgartenservice-havelland.de/gartenpflege.html" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Gartenpflege Havelland",
+    "description": "Professionelle Gartenpflege mit Spezialisierung auf Heckenschnitt und Rasenpflege im Havelland.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Haus- & Gartenservice Havelland",
+      "telephone": "+4915156198195",
+      "address": {"@type":"PostalAddress","streetAddress":"Darmstädter Straße 15","addressLocality":"Falkensee","addressCountry":"DE"}
+    },
+    "areaServed": ["Falkensee","Brieselang","Dallgow","Kladow","Schönwalde","Spandau"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green-dark:#1a4a1a;--green-mid:#2d7a2d;--green-light:#4caf50;
+      --green-accent:#6fcf6f;--green-pale:#e8f5e9;--green-section:#f0f7f0;
+      --black:#0d0d0d;--gray-mid:#4a4a4a;--gray-light:#e0e0e0;--white:#ffffff;
+      --btn-accent:#e8a000;--btn-hover:#c98900;
+      --font-display:'Barlow Condensed',sans-serif;--font-body:'Source Sans 3',sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--font-body);background:var(--white);color:var(--black);overflow-x:hidden;}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(13,13,13,0.97);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;border-bottom:2px solid var(--green-mid);}
+    .nav-logo{display:flex;align-items:center;text-decoration:none;}
+    .nav-logo-placeholder{height:50px;width:180px;background:rgba(255,255,255,0.06);border:2px dashed rgba(255,255,255,0.2);border-radius:6px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:0.68rem;font-family:var(--font-body);text-align:center;padding:6px;line-height:1.4;}
+    .nav-links{display:flex;gap:2rem;list-style:none;align-items:center;}
+    .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.85rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--green-accent);}
+    .nav-cta{background:var(--btn-accent)!important;color:var(--black)!important;padding:10px 20px;border-radius:3px;font-weight:700!important;}
+    .nav-cta:hover{background:var(--btn-hover)!important;}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+    .hamburger span{display:block;width:26px;height:2px;background:#fff;}
+
+    /* PAGE HERO */
+    .page-hero{position:relative;min-height:55vh;display:flex;align-items:flex-end;overflow:hidden;background:#081508;padding-top:72px;}
+    .page-hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#112011 0%,#081208 70%);z-index:0;}
+    .page-hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(45,122,45,0.2) 0%,transparent 60%);}
+    .page-hero-img{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;}
+    .page-hero-img .ph-text{color:rgba(255,255,255,0.1);font-size:0.82rem;text-align:center;border:2px dashed rgba(255,255,255,0.08);padding:1.2rem 2rem;border-radius:6px;font-family:var(--font-body);line-height:1.6;}
+    .page-hero-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(8,18,8,0.9) 0%,rgba(8,18,8,0.4) 60%,transparent 100%);}
+    .page-hero-content{position:relative;z-index:3;max-width:1200px;margin:0 auto;padding:0 5% 4rem;}
+    .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:1rem;font-size:0.78rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.08em;}
+    .breadcrumb a{color:rgba(255,255,255,0.4);text-decoration:none;}.breadcrumb a:hover{color:var(--green-accent);}
+    .breadcrumb span{color:var(--green-accent);}
+    .page-hero h1{font-family:var(--font-display);font-size:clamp(3rem,6.5vw,6rem);font-weight:800;color:#fff;text-transform:uppercase;line-height:0.95;margin-bottom:1rem;}
+    .page-hero h1 em{color:var(--green-accent);font-style:normal;}
+    .page-hero p{font-size:1.05rem;color:rgba(255,255,255,0.65);max-width:580px;line-height:1.75;margin-bottom:2rem;font-weight:300;}
+    .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+
+    .btn-primary{background:var(--btn-accent);color:var(--black);padding:14px 26px;border-radius:3px;font-weight:700;font-size:0.9rem;text-decoration:none;text-transform:uppercase;letter-spacing:0.05em;display:inline-flex;align-items:center;gap:8px;transition:background 0.2s,transform 0.2s;}
+    .btn-primary:hover{background:var(--btn-hover);transform:translateY(-2px);}
+    .btn-secondary{background:transparent;color:#fff;padding:14px 26px;border-radius:3px;font-weight:600;font-size:0.9rem;text-decoration:none;text-transform:uppercase;letter-spacing:0.05em;border:1.5px solid rgba(255,255,255,0.28);display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s,color 0.2s;}
+    .btn-secondary:hover{border-color:var(--green-accent);color:var(--green-accent);}
+
+    /* SECTIONS */
+    section{padding:80px 5%;}
+    .container{max-width:1200px;margin:0 auto;}
+    .section-label{display:inline-block;color:var(--green-mid);font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:10px;border-left:3px solid var(--green-mid);padding-left:10px;}
+    h2.section-title{font-family:var(--font-display);font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:800;line-height:1.0;text-transform:uppercase;letter-spacing:0.02em;color:var(--green-dark);margin-bottom:1rem;}
+    .section-sub{font-size:0.97rem;color:var(--gray-mid);max-width:600px;line-height:1.75;}
+
+    /* INTRO */
+    .intro{background:var(--green-section);}
+    .intro-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+    .img-placeholder{width:100%;aspect-ratio:4/3;background:#ddeedd;border-radius:8px;border:2px dashed #aaccaa;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#668866;font-size:0.85rem;text-align:center;padding:2rem;}
+    .img-placeholder .ph-icon{font-size:2.5rem;opacity:0.45;}
+    .img-placeholder .ph-label{font-weight:700;color:#557755;}
+    .img-placeholder .ph-hint{font-size:0.75rem;color:#88aa88;line-height:1.5;}
+    .intro-text p{font-size:0.97rem;color:var(--gray-mid);line-height:1.8;margin-bottom:1rem;}
+    .highlight-box{background:var(--green-dark);color:#fff;border-radius:8px;padding:1.6rem;margin-top:1.5rem;}
+    .highlight-box strong{display:block;font-family:var(--font-display);font-size:1.4rem;color:var(--green-accent);margin-bottom:0.4rem;text-transform:uppercase;}
+    .highlight-box p{font-size:0.88rem;color:rgba(255,255,255,0.7);line-height:1.6;margin:0;}
+
+    /* SERVICES DETAIL */
+    .services-detail{background:var(--white);}
+    .services-detail-header{text-align:center;margin-bottom:3.5rem;}
+    .services-detail-header .section-label{border:none;padding:0;}
+    .detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;}
+    .detail-card{background:var(--green-section);border:1px solid #c8e0c8;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.3s,box-shadow 0.3s;}
+    .detail-card:hover{transform:translateY(-5px);box-shadow:0 10px 32px rgba(26,74,26,0.12);}
+    .detail-img{width:100%;aspect-ratio:16/9;background:#ddeedd;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border-bottom:3px solid var(--green-mid);color:#668866;font-size:0.8rem;text-align:center;padding:1.5rem;}
+    .detail-img .ph-icon{font-size:2rem;opacity:0.4;}
+    .detail-img .ph-label{font-weight:600;font-size:0.76rem;color:#557755;line-height:1.4;}
+    .detail-body{padding:1.8rem;}
+    .detail-body h3{font-family:var(--font-display);font-size:2rem;font-weight:800;text-transform:uppercase;color:var(--green-dark);margin-bottom:0.8rem;}
+    .detail-body p{font-size:0.92rem;color:var(--gray-mid);line-height:1.75;margin-bottom:1.2rem;}
+    .detail-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+    .detail-list li{font-size:0.88rem;color:var(--gray-mid);display:flex;align-items:flex-start;gap:9px;line-height:1.45;}
+    .detail-list li::before{content:'';display:block;width:6px;height:6px;background:var(--green-mid);border-radius:50%;margin-top:5px;flex-shrink:0;}
+
+    /* BEFORE AFTER */
+    .before-after{background:var(--green-section);}
+    .ba-header{text-align:center;margin-bottom:3rem;}
+    .ba-header .section-label{border:none;padding:0;}
+    .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+    .ba-card{background:var(--white);border-radius:8px;overflow:hidden;border:1px solid #ddeedd;box-shadow:0 2px 16px rgba(0,0,0,0.05);}
+    .ba-imgs{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+    .ba-img{aspect-ratio:1;background:#ddeedd;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#668866;font-size:0.72rem;text-align:center;padding:1rem;border-right:2px solid var(--white);}
+    .ba-img:last-child{border-right:none;background:#c8e8c8;}
+    .ba-img .ph-icon{font-size:1.5rem;opacity:0.4;}
+    .ba-img .ph-label{font-weight:700;font-size:0.7rem;color:#557755;}
+    .ba-label{display:flex;}
+    .ba-label span{flex:1;text-align:center;padding:6px;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;background:var(--gray-light);color:var(--gray-mid);}
+    .ba-label span:last-child{background:var(--green-mid);color:#fff;}
+    .ba-info{padding:1rem 1.2rem;}
+    .ba-info h4{font-family:var(--font-display);font-size:1.1rem;font-weight:700;text-transform:uppercase;color:var(--green-dark);margin-bottom:0.3rem;}
+    .ba-info p{font-size:0.82rem;color:var(--gray-mid);line-height:1.5;}
+
+    /* WHY SPECIALIZE */
+    .why-spec{background:var(--green-dark);color:#fff;}
+    .why-spec h2{color:#fff;}
+    .why-spec .section-label{color:var(--green-accent);border-color:var(--green-accent);}
+    .why-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+    .facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;}
+    .fact-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:1.4rem;transition:border-color 0.2s;}
+    .fact-card:hover{border-color:var(--green-accent);}
+    .fact-num{font-family:var(--font-display);font-size:2.5rem;font-weight:800;color:var(--green-accent);line-height:1;}
+    .fact-label{font-size:0.82rem;color:rgba(255,255,255,0.55);margin-top:4px;line-height:1.4;}
+
+    /* PROCESS */
+    .process{background:var(--white);}
+    .process-header{text-align:center;margin-bottom:3.5rem;}
+    .process-header .section-label{border:none;padding:0;}
+    .process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;position:relative;}
+    .process-steps::before{content:'';position:absolute;top:27px;left:12.5%;right:12.5%;height:2px;background:rgba(45,122,45,0.15);z-index:0;}
+    .step{text-align:center;position:relative;z-index:1;}
+    .step-num{width:54px;height:54px;background:var(--green-mid);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.6rem;font-weight:800;margin:0 auto 1.2rem;border:3px solid var(--green-accent);}
+    .step h4{font-size:0.9rem;font-weight:700;margin-bottom:0.5rem;color:var(--green-dark);text-transform:uppercase;letter-spacing:0.04em;}
+    .step p{font-size:0.82rem;color:var(--gray-mid);line-height:1.6;}
+
+    /* CTA BAND */
+    .cta-band{background:var(--btn-accent);padding:60px 5%;}
+    .cta-band-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;}
+    .cta-band h2{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,3rem);font-weight:800;text-transform:uppercase;color:var(--black);}
+    .cta-band p{color:rgba(0,0,0,0.65);font-size:0.95rem;margin-top:0.4rem;}
+    .btn-dark{background:var(--green-dark);color:#fff;padding:15px 30px;border-radius:3px;font-weight:700;font-size:0.9rem;text-decoration:none;text-transform:uppercase;letter-spacing:0.05em;transition:background 0.2s;display:inline-block;}
+    .btn-dark:hover{background:var(--green-mid);}
+
+    /* FAQ */
+    .faq{background:var(--green-section);}
+    .faq-header{text-align:center;margin-bottom:3rem;}
+    .faq-header .section-label{border:none;padding:0;}
+    .faq-list{display:flex;flex-direction:column;gap:1rem;max-width:800px;margin:0 auto;}
+    .faq-item{background:var(--white);border:1px solid #c8e0c8;border-radius:6px;overflow:hidden;}
+    .faq-q{padding:1.2rem 1.5rem;font-weight:700;font-size:0.95rem;color:var(--green-dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;}
+    .faq-q::after{content:'+';font-size:1.3rem;color:var(--green-mid);transition:transform 0.2s;}
+    .faq-item.open .faq-q::after{transform:rotate(45deg);}
+    .faq-a{display:none;padding:0 1.5rem 1.2rem;font-size:0.9rem;color:var(--gray-mid);line-height:1.75;}
+    .faq-item.open .faq-a{display:block;}
+
+    /* WA FLOAT */
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:999;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.55rem;box-shadow:0 4px 24px rgba(37,211,102,0.45);text-decoration:none;transition:transform 0.2s;animation:waPulse 2.5s infinite;}
+    .wa-float:hover{transform:scale(1.1);}
+    @keyframes waPulse{0%,100%{box-shadow:0 4px 24px rgba(37,211,102,0.45);}50%{box-shadow:0 4px 44px rgba(37,211,102,0.75);}}
+
+    /* FOOTER */
+    footer{background:var(--black);color:rgba(255,255,255,0.38);text-align:center;padding:1.6rem 5%;font-size:0.8rem;border-top:2px solid var(--green-dark);}
+    footer a{color:rgba(255,255,255,0.38);text-decoration:none;}footer a:hover{color:var(--green-accent);}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+    .reveal,.reveal.visible{opacity:1!important;transform:none!important;transition:none!important;}
+    .reveal.visible{opacity:1;transform:translateY(0);}
+
+    @media(max-width:900px){
+      .nav-links{display:none;}.hamburger{display:flex;}
+      .nav-links.open{display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:rgba(10,10,10,0.98);padding:2rem 5%;gap:1.5rem;border-bottom:1px solid rgba(255,255,255,0.07);}
+      .intro-inner,.why-inner{grid-template-columns:1fr;gap:2.5rem;}
+      .detail-grid,.ba-grid{grid-template-columns:1fr;}
+      .facts-grid{grid-template-columns:1fr 1fr;}
+      .process-steps{grid-template-columns:1fr 1fr;}.process-steps::before{display:none;}
+      .cta-band-inner{flex-direction:column;text-align:center;}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-placeholder">Logo hier einfügen<br>(logo.png)</div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Startseite</a></li>
+    <li><a href="gartenpflege.html" class="active">Gartenpflege</a></li>
+    <li><a href="steinreinigung.html">Steinreinigung</a></li>
+    <li><a href="herbstpflege.html">Herbstpflege</a></li>
+    <li><a href="kontakt.html" class="nav-cta">Kostenlos anfragen</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-img"><p class="ph-text">Hero-Bild einfügen<br>(Heckenschnitt / gepflegter Garten)</p></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Startseite</a> / <span>Gartenpflege</span></div>
+    <h1>Gartenpflege<br><em>Havelland</em></h1>
+    <p>Professionelle Gartenpflege in Falkensee und Umgebung – mit Spezialisierung auf Heckenschnitt und Rasenpflege. Sauber, zuverlässig und zum fairen Preis.</p>
+    <div class="hero-btns">
+      <a href="kontakt.html" class="btn-primary">Kostenlose Anfrage</a>
+      <a href="https://wa.me/4915156198195" target="_blank" class="btn-secondary">WhatsApp schreiben</a>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="container">
+    <div class="intro-inner">
+      <div class="reveal">
+        <!-- BILD: Gartenpflege Übersicht / Vorher-Nachher -->
+        <div class="img-placeholder">
+          <span class="ph-icon">&#127807;</span>
+          <span class="ph-label">Bild einfügen: Gartenpflege</span>
+          <span class="ph-hint">Empfehlung: Vorher-Nachher Vergleich<br>Heckenschnitt oder Rasenpflege</span>
+        </div>
+      </div>
+      <div class="intro-text reveal">
+        <span class="section-label">Gartenpflege</span>
+        <h2 class="section-title">Ihr Garten in besten Händen</h2>
+        <p>Ein gepflegter Garten ist mehr als nur Optik – er ist Ihr persönlicher Rückzugsort. Mit über 4 Jahren Erfahrung und professionellem Equipment sorge ich dafür, dass Ihr Außenbereich das ganze Jahr über makellos aussieht.</p>
+        <p>Mein Schwerpunkt liegt auf dem <strong>Heckenschnitt</strong> – präzise, sauber und in jeder Größe. Ob kleine Gartenhecke oder große Thujahecke, ich bringe sie in Form.</p>
+        <div class="highlight-box">
+          <strong>Spezialisierung: Heckenschnitt</strong>
+          <p>Ich habe mich auf professionellen Heckenschnitt spezialisiert – mit dem richtigen Equipment für jede Heckenhöhe und -breite. Das Ergebnis überzeugt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES DETAIL -->
+<section class="services-detail">
+  <div class="container">
+    <div class="services-detail-header reveal">
+      <span class="section-label">Leistungen</span>
+      <h2 class="section-title">Was wir anbieten</h2>
+      <p class="section-sub" style="margin:0 auto;">Alle Gartenarbeiten aus einer Hand – professionell und zuverlässig im gesamten Havelland.</p>
+    </div>
+    <div class="detail-grid">
+      <div class="detail-card reveal">
+        <div class="detail-img">
+          <!-- BILD: Heckenschnitt Vorher-Nachher -->
+          <span class="ph-icon">&#9984;</span>
+          <span class="ph-label">Bild: Heckenschnitt Vorher-Nachher</span>
+        </div>
+        <div class="detail-body">
+          <h3>Heckenschnitt</h3>
+          <p>Mein Kernbereich – präziser Heckenschnitt für alle Heckenarten und -größen. Von der kleinen Gartenhecke bis zur großen Thujahecke, ich forme Ihre Hecke professionell und sauber.</p>
+          <ul class="detail-list">
+            <li>Thujahecken, Buchenhecken, Liguster &amp; alle weiteren Arten</li>
+            <li>Professionelles Equipment für jede Heckenhöhe</li>
+            <li>Saubere Abgrenzung und gerades Ergebnis</li>
+            <li>Schnittgut wird fachgerecht entfernt und entsorgt</li>
+            <li>Auch große und verwachsene Hecken kein Problem</li>
+          </ul>
+        </div>
+      </div>
+      <div class="detail-card reveal">
+        <div class="detail-img">
+          <!-- BILD: Rasenpflege Vorher-Nachher -->
+          <span class="ph-icon">&#127807;</span>
+          <span class="ph-label">Bild: Rasenpflege / Rasenmähen Vorher-Nachher</span>
+        </div>
+        <div class="detail-body">
+          <h3>Rasenpflege</h3>
+          <p>Ein gleichmäßig gemähter Rasen gibt jedem Garten das gewisse Etwas. Mit professionellem Rasenmäher sorge ich für ein sauberes, gleichmäßiges Ergebnis – auch auf größeren Flächen.</p>
+          <ul class="detail-list">
+            <li>Rasenmähen in gleichmäßiger Höhe</li>
+            <li>Rasenkanten sauber abstechen und trimmen</li>
+            <li>Grasschnitt wird ordentlich beseitigt</li>
+            <li>Regelmäßige Pflege nach Absprache möglich</li>
+            <li>Privat- und Gewerbeflächen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE AFTER -->
+<section class="before-after">
+  <div class="container">
+    <div class="ba-header reveal">
+      <span class="section-label">Unsere Arbeit</span>
+      <h2 class="section-title">Vorher – Nachher</h2>
+      <p class="section-sub" style="margin:0 auto;">Bilder sagen mehr als tausend Worte. Hier sehen Sie den Unterschied, den professionelle Gartenpflege macht.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-card reveal">
+        <div class="ba-imgs">
+          <div class="ba-img"><span class="ph-icon">&#128247;</span><span class="ph-label">Vorher-Bild<br>einfügen</span></div>
+          <div class="ba-img"><span class="ph-icon">&#128247;</span><span class="ph-label">Nachher-Bild<br>einfügen</span></div>
+        </div>
+        <div class="ba-label"><span>Vorher</span><span>Nachher</span></div>
+        <div class="ba-info"><h4>Heckenschnitt</h4><p>Thujahecke – Falkensee</p></div>
+      </div>
+      <div class="ba-card reveal">
+        <div class="ba-imgs">
+          <div class="ba-img"><span class="ph-icon">&#128247;</span><span class="ph-label">Vorher-Bild<br>einfügen</span></div>
+          <div class="ba-img"><span class="ph-icon">&#128247;</span><span class="ph-label">Nachher-Bild<br>einfügen</span></div>
+        </div>
+        <div class="ba-label"><span>Vorher</span><span>Nachher</span></div>
+        <div class="ba-info"><h4>Rasenpflege</h4><p>Privatgarten – Brieselang</p></div>
+      </div>
+      <div class="ba-card reveal">
+        <div class="ba-imgs">
+          <div class="ba-img"><span class="ph-icon">&#128247;</span><span class="ph-label">Vorher-Bild<br>einfügen</span></div>
+          <div class="ba-img"><span class="ph-icon">&#128247;</span><span class="ph-label">Nachher-Bild<br>einfügen</span></div>
+        </div>
+        <div class="ba-label"><span>Vorher</span><span>Nachher</span></div>
+        <div class="ba-info"><h4>Heckenschnitt</h4><p>Buchenhecke – Kladow</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SPECIALIZE -->
+<section class="why-spec">
+  <div class="container">
+    <div class="why-inner">
+      <div class="reveal">
+        <span class="section-label">Unsere Stärke</span>
+        <h2 class="section-title">Warum professionelle Gartenpflege?</h2>
+        <p style="color:rgba(255,255,255,0.6);line-height:1.75;margin:1rem 0 2rem;font-size:0.95rem;">Ein gepflegter Garten steigert nicht nur den Wohlfühlfaktor, sondern auch den Wert Ihrer Immobilie. Mit professionellem Equipment und dem richtigen Know-how erreichen wir Ergebnisse, die mit Haushaltsmitteln nicht möglich sind.</p>
+        <a href="kontakt.html" class="btn-primary">Jetzt Angebot anfragen</a>
+      </div>
+      <div class="facts-grid reveal">
+        <div class="fact-card"><div class="fact-num">4+</div><div class="fact-label">Jahre Erfahrung in der Gartenpflege</div></div>
+        <div class="fact-card"><div class="fact-num">800+</div><div class="fact-label">Aufträge erfolgreich abgeschlossen</div></div>
+        <div class="fact-card"><div class="fact-num">100%</div><div class="fact-label">Kostenlose Besichtigung vor Auftragserteilung</div></div>
+        <div class="fact-card"><div class="fact-num">1 Tag</div><div class="fact-label">Angebot oft noch am selben Tag</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <span class="section-label">Ablauf</span>
+      <h2 class="section-title">So läuft es ab</h2>
+      <p class="section-sub" style="margin:0 auto;">Von Ihrer Anfrage bis zum perfekten Ergebnis – unkompliziert und transparent.</p>
+    </div>
+    <div class="process-steps">
+      <div class="step reveal"><div class="step-num">1</div><h4>Anfrage</h4><p>Fotos und Infos per WhatsApp – kostenlos und unverbindlich.</p></div>
+      <div class="step reveal"><div class="step-num">2</div><h4>Angebot</h4><p>Angebot oder kostenlose Besichtigung – oft noch am selben Tag.</p></div>
+      <div class="step reveal"><div class="step-num">3</div><h4>Termin</h4><p>Wir vereinbaren einen passenden Termin für die Gartenarbeit.</p></div>
+      <div class="step reveal"><div class="step-num">4</div><h4>Ergebnis</h4><p>Professionelle Ausführung – sauber, pünktlich, überzeugend.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="cta-band-inner">
+    <div>
+      <h2>Gartenpflege anfragen</h2>
+      <p>Kostenlose Besichtigung – Angebot noch am selben Tag</p>
+    </div>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="kontakt.html" class="btn-dark">Jetzt anfragen</a>
+      <a href="https://wa.me/4915156198195" target="_blank" class="btn-dark" style="background:var(--green-mid);">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="faq-header reveal">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Häufige Fragen</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q">Wie oft sollte eine Hecke geschnitten werden?</div>
+        <div class="faq-a">Die meisten Hecken sollten 1–2 Mal pro Jahr geschnitten werden, idealerweise im Frühjahr und Spätsommer. Je nach Heckenpflanze kann der Rhythmus variieren. Ich berate Sie gerne individuell.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Kommen Sie auch für kleine Gärten?</div>
+        <div class="faq-a">Ja, absolut! Ich komme für Aufträge jeder Größe – vom kleinen Reihenhausgarten bis zur großen Anlage. Der Preis richtet sich nach Aufwand und Fläche.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Was passiert mit dem Schnittgut?</div>
+        <div class="faq-a">Das anfallende Schnittgut wird von mir ordentlich zusammengeräumt und fachgerecht entsorgt. Sie müssen sich um nichts kümmern.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">In welchen Städten arbeiten Sie?</div>
+        <div class="faq-a">Ich bin hauptsächlich in Falkensee, Brieselang, Dallgow, Kladow, Schönwalde, Spandau, Gatow, Nauen und Umgebung tätig. Bei anderen Orten einfach anfragen!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Haus- &amp; Gartenservice Havelland &nbsp;·&nbsp; Darmstädter Str. 15, Falkensee &nbsp;·&nbsp;
+  hausgartenservicehvl@gmail.com &nbsp;·&nbsp;
+  <a href="#">Impressum</a> &nbsp;·&nbsp; <a href="#">Datenschutz</a></p>
+</footer>
+
+<a href="https://wa.me/4915156198195" target="_blank" class="wa-float" title="WhatsApp">&#128172;</a>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var btn=document.getElementById('hb');
+  var nav=document.getElementById('nl');
+  if(!btn||!nav)return;
+  btn.style.zIndex='9999';
+  btn.style.position='relative';
+  function toggle(){nav.classList.toggle('open');}
+  btn.onclick=function(e){e.preventDefault();e.stopPropagation();toggle();};
+  document.addEventListener('click',function(e){
+    if(nav.classList.contains('open')&&!nav.contains(e.target)&&!btn.contains(e.target)){
+      nav.classList.remove('open');
+    }
+  });
+  document.querySelectorAll('.faqq').forEach(function(q){
+    q.parentElement.querySelector('.faqq').onclick=function(){q.parentElement.classList.toggle('open');};
+  });
+});
+</script>
+</body>
+</html>
